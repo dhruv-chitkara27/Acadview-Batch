@@ -2,9 +2,11 @@
 
 <head>
 <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
-
+body {
+  background: rgba(red, green, blue, 1);
+}
 .robot {
   position: relative;
   left: 200px;
@@ -19,7 +21,21 @@
   position: relative;
   left: 140px;
 }
-
+@keyframes dance {
+  from {
+    left: 800px;
+  }
+}
+@-webkit-keyframes dance {
+    from {
+    left: 800px;
+  }
+}
+@-moz-keyframes dance {
+    from {
+    left: 800px;
+  }
+}
 @keyframes blink {
   50% {
     background: radial-gradient(circle, red 15%, transparent 40%), #cc5;
@@ -36,9 +52,13 @@
   }
 }
 .laser {
+   width: 5px;
+  height: 0;
   animation: blink .5s infinite;
   -webkit-animation: blink .5s infinite;
   -moz-animation: blink .5s infinite;
+  position: relative;
+  left: 140px;
 }
 .brain {
   background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
@@ -97,6 +117,14 @@
   top: -10px;
   z-index: -1;
 }
+img{
+  animation: dance 4s infinite;
+  -webkit-animation: dance 4s infinite;
+  -moz-animation: dance 4s infinite;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
 </style>
 </head>
 
@@ -114,10 +142,13 @@
 
 <button class="flash">laser eyes on/off</button>
 <button class="color">change color!</button>
+<button class="moves">Break/Dance</button>
+
+<img src="dance_cotter.gif">
 <script>
 // When eyes button is clicked, toggle laser class on brain
 $(".flash").click(function() {
-  $(".brain").toggleClass('laser');
+  $(".brain").toggleClass("laser");
 });
 
 // When color button is clicked...
@@ -127,8 +158,18 @@ $(".color").click(function() {
   var green = Math.floor(Math.random() * 255);
   var blue = Math.floor(Math.random() * 255);
   
-  //Display the three values in an alert window
-  alert(red + "," + green + "," + blue);
+  //Generate an RGBA value from red , green and blue
+  var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
+  
+  // and change the body's background to our random color
+  $("body").css("background" , randomRGBA);
+  
+  //Display random RGBA value when generated
+ // alert(randomRGBA);
+ 
+ $(".moves").click(function() {
+   $("img").toggle();
+ });
 });
 </script>
 </body>
