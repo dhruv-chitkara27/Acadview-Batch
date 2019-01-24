@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<style>
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+var prompts= [
+	'type your name',
+	'type an adjective',
+	'type a noun'
+];
+
+//keep track of current prompt we're on
+var currentPrompt = 0;
+
+//A function tat will call the next prompt
+var nextPrompt = function() {
+
+// put first prompt in all html elements with class prompt
+$('.prompt').html(prompts[currentPrompt]);
+
+//move the next prompt into variable currentPrompt
+currentPrompt = currentPrompt + 1;
+}
+
+//run nextPrompt function when button is clicked
+$('button').click(function() {
+  nextPrompt();
+});
+
+</script>
+</body>
