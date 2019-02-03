@@ -135,3 +135,90 @@ function sum(a,b) {
 
 
 
+
+
+"""
+var titleArr = Array.from(title);
+
+title.forEach(function(t) {
+
+console.log(t)
+})
+"""
+
+
+"""
+var pB = document.querySelector('#page-banner');
+pB
+"""
+
+"""
+var pB1 = document.querySelector('#page-banner.title');
+pB1
+"""
+
+"""
+var movie3 = document.querySelector('#movie-list li:nth-child(2) .name');
+var movie1 = document.querySelector('#movie-list li .name');
+var movie1 = document.querySelectorAll('#movie-list li .name');
+var title  = document.querySelectorAll('.title');
+var movies = document.querySelectorAll('#movie-list li .name');
+movies.forEach(function(movie) {
+	console.log(movie.innerHTML);
+})
+"""
+
+"""
+movies.forEach(function(movie) {
+    movie.textContent += 'Rises';
+});
+"""
+
+"""
+movieList.innerHTML += '<p>I love these movies</p>';
+"""
+
+"""
+var banner = document.querySelector('#page-banner');
+banner
+"""
+
+"""
+banner.nodeName
+banner.hasChildNodes();
+"""
+
+"""
+var eventEx = document.querySelector('#movie-list .title');
+eventEx
+eventEx.addEventListener('click' , function(e) {
+
+	console.log('Clicked the button');
+})
+"""
+
+
+"""
+var btns = document.querySelectorAll('#movie-list .delete');
+
+btns.forEach(function(btn){
+  btn.addEventListener('click', function(e){
+      const li = e.target.parentElement;
+      li.parentNode.removeChild(li)
+  });
+});
+"""
+
+
+"""EVENT PUBLIC """
+"""
+list.addEventListener('click', function(e){
+	if(e.target.className === 'delete') {
+		console.log(e.target);
+		const li = e.target.parentElement;
+		console.log(li);
+		li.parentNode.removeChild(li);
+		list.removeChild(li);
+"""
+
+

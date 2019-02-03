@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset=""utf-8 />
+  <link href="style.css" rel="stylesheet" />
+  <title>Working with Javascript</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="page-banner">
+        <h1 class="title">Moviemania</h1>
+        <p>
+          Movies for everyone
+        </p>
+        <form id="search-movies">
+          <input type="text" placeholder="Search movies..." />
+        </form>
+      </div>
+    </header>
+    <div id="movie-list">
+      <h2 class="title">Movies to watch</h2>
+      <ul>
+        <li>
+          <span class="name">Fight Club</span>
+          <span class="delete">Delete</span>
+        </li>
+        <li>
+          <span class="name">Shawshank Redemption</span>
+          <span class="delete">Delete</span>
+        </li>
+        <li>
+          <span class="name">Secret Life of Walter Mitty</span>
+          <span class="delete">Delete</span>
+        </li>
+        <li>
+          <span class="name">Dark Knight</span>
+          <span class="delete">Delete</span>
+        </li>
+      </ul>
+    </div>
+    <form id="add-movie">
+      <input type="checkbox" id="hide" />
+      <label for="hide">Hide the List</label>
+      <input type="text" placeholder="Add a movie..." />
+      <button>Add</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
