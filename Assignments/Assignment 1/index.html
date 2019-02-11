@@ -14,13 +14,13 @@
           Movies for everyone
         </p>
         <form id="search-movies">
-          <input type="text" placeholder="Search movies..." />
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search movies..."/>
         </form>
       </div>
     </header>
     <div id="movie-list">
       <h2 class="title">Movies to watch</h2>
-      <ul>
+      <ul id="myUL">
         <li>
           <span class="name">Fight Club</span>
           <span class="delete">Delete</span>
@@ -40,10 +40,10 @@
       </ul>
     </div>
     <form id="add-movie">
-      <input type="checkbox" id="hide" />
+      <input type="checkbox" id="hide" onclick="showMe('movie-list',this)"/>
       <label for="hide">Hide the List</label>
-      <input type="text" placeholder="Add a movie..." id="adda"/>
-      <button id="add">Add</button>
+      <input type="text" placeholder="Add a movie..." />
+      <button id="add" onclick="myFunction()">Add</button>
     </form>
   </div>
   <script src="app.js"></script>
