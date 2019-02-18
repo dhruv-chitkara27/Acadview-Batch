@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Display from './Display';
 
 class App extends Component {
+  state = {
+    displayInfos : [
+      { name:'John', age:'27' , birthMonth:'July', id: 1 },
+      { name:'Wick', age:'30' , birthMonth:'June', id: 2 },
+      { name:'Richard', age:'42' , birthMonth:'September', id:3 }
+    ]
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>This is my App</h1>
+        <p>React!</p>
+        <Display displayInfos = {this.state.displayInfos}/>
       </div>
     );
   }

@@ -5,3 +5,8 @@ npx create-react-app my-app
 
 **npm just install packages whereas npx is the ability to execute a package which wasn't previously installed
 
+
+Babel is a transpiler
+
+
+WebPack =>> Bundler (bundles the files)

@@ -1,0 +1,19 @@
+h1{
+    text-align:center;
+    margin-top: 80px;
+    font-size:50px;
+}
+.cards{
+    text-align: center;
+    margin: 0 auto;
+    width: 25%;
+    padding:20px;
+    background-color: gainsboro;
+    font-size:22px;
+    border-radius:5px;
+    box-shadow: 5px 5px #888888;
+
+}
+input{
+    border-radius: 2px;
+}
