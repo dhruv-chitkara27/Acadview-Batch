@@ -1,0 +1,74 @@
+.form-style {
+    text-align: center;
+    width: 400px;
+    height: 340px;
+    margin: 40px auto;
+    padding: 40px;
+    background: url('../form.jpeg');
+    background-repeat: no-repeat;
+    background-size: 400px 340px;
+    border-radius: 60px 0 0 0;
+    border: 2px solid rgb(73, 70, 70);
+    box-shadow: 10px 10px 10px rgb(128, 122, 122);
+}
+
+.display-card {
+    text-align: center;
+    width: 400px;
+    height: 340px;
+    margin: 20px auto;
+    padding: 40px;
+    background: url('../card.jpeg');
+    background-repeat: no-repeat;
+    background-size: 400px 340px;
+    border: 2px solid rgb(73, 70, 70);
+    box-shadow: 10px 10px 10px rgb(128, 122, 122);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-group input {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid rgb(24, 114, 150);
+    padding: 10px;
+}
+
+.form-group textarea {
+    border: 2px solid rgb(24, 114, 150);
+
+}
+
+.form-style button {
+    border: 1px solid rgb(73, 70, 70);
+}
+
+.display-card p:nth-child(1) {
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Sniglet';
+    text-transform: uppercase;
+}
+
+.display-card p:nth-child(2) {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Sniglet';
+    text-transform: capitalize;
+}
+
+.display-card p:nth-child(3) {
+    font-family: 'Sniglet';
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+::placeholder {
+    font-size: 20px;
+}

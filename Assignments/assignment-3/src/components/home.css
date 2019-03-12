@@ -1,0 +1,49 @@
+@keyframes scroll {
+    0% {
+        transform: translate(-100%, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.post {
+    margin: 50px 70px 30px 70px;
+    box-shadow: 10px 10px 10px rgba(66, 64, 64, 0.603);
+    border: 3px solid rgb(73, 70, 70);
+    justify-content: center;
+    display: flex;
+}
+
+.marquee {
+    display: block;
+}
+
+.marquee .post {
+    display: inline-block;
+    animation: scroll 2s linear;
+}
+
+.content {
+    background: #16a085;
+    text-align: center;
+    padding: 10px;
+}
+
+.content p:nth-child(1) {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+}
+
+.content p:nth-child(2) {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Srisakdi', cursive;
+}
+
+.nav-pills>.active>a,
+.nav-pills>.active>a:hover {
+background-color: #c0392b;
+}
