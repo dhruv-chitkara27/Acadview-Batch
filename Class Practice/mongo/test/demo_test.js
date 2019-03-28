@@ -1,4 +1,4 @@
-var assert = require('assert');
+const assert = require('assert');
 describe('This is my demo test', function() {
     it('this is test for addition', function() {
         assert(2 + 2 === 4);
