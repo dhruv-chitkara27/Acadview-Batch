@@ -1,4 +1,4 @@
-// const mocha = require('mocha');
+
 const assert = require('assert');
 const GOTChar = require('../models/GOTChar');
 
