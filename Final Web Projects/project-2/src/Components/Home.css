@@ -1,0 +1,46 @@
+.img1 {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+ text-align: center;
+ color: white;
+}
+
+
+
+h2{
+   color: #74b9ff;
+   font: bold  Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   font-size: 50px;
+}
+
+.bgimg{
+  width: 70%;
+  height: 600px;
+}
+
+hr {
+  width: 30px;
+}
+
+.about {
+  color: #2c3e50;
+}
+hr {
+  width: 350px;
+  border-top: 1px dashed;
+}
+p{
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  font-size: 18px;
+  justify-content: center;
+  font-style: Helvetica ;
+  color: grey;
+}
