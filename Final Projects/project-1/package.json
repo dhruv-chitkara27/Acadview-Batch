@@ -1,0 +1,29 @@
+{
+  "name": "web-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruv-chitkara27/Web-Store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruv-chitkara27/Web-Store/issues"
+  },
+  "homepage": "https://github.com/dhruv-chitkara27/Web-Store#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "hjs": "0.0.6",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.4.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
